@@ -57,32 +57,60 @@ public class Country
     
     }    
     
-    public int getNewDeaths() {
-        return newDeaths;
+    public int getNewDeaths()
+    
+    {
+    
+    return newDeaths;
+    
     }
 
-    public int getNewRecovered() {
-        return newRecovered;
+    public int getNewRecovered() 
+    
+    {
+    
+    return newRecovered;
+    
     }
 
-    public int getTotalConfirmed() {
-        return totalConfirmed;
+    public int getTotalConfirmed() 
+    
+    {
+    
+    return totalConfirmed;
+    
     }
 
-    public int getTotalDeaths() {
-        return totalDeaths;
+    public int getTotalDeaths() 
+    
+    {
+    
+    return totalDeaths;
+    
     }
 
-    public int getTotalRecovered() {
-        return totalRecovered;
+    public int getTotalRecovered() 
+    
+    {
+    
+    return totalRecovered;
+    
     }
     
-    public String getName() {
-        return name;
+    public String getName()
+    {
+    
+    return name;
+    
     }
     
-    public String getCountryCode() {
-        return countryCode;
+    public String getCountryCode() 
+    
+    {
+    
+    return countryCode;
+    
     }
+
 }
 
