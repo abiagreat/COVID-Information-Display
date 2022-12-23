@@ -1,28 +1,60 @@
 # COVID-Information-Display
 
-public class Country {
-    private String name;
-    private String countryCode;
-    private int newConfirmed;
-    private int newDeaths;
-    private int newRecovered;
-    private int totalConfirmed;
-    private int totalDeaths;
-    private int totalRecovered;
+Code in Java:
 
-    public Country (String name, String countryCode, int newConfirmed, int newDeaths, int newRecovered, int totalConfirmed, int totalDeaths, int totalRecovered){
-        this.name = name;
-        this.countryCode = countryCode;
-        this.newConfirmed = newConfirmed;
-        this.newDeaths = newDeaths;
-        this.newRecovered = newRecovered;
-        this.totalConfirmed = totalConfirmed;
-        this.totalDeaths = totalDeaths;
-        this.totalRecovered = totalRecovered;
+
+public class Country 
+
+{
+   
+   private String name;
+   
+   private String countryCode;
+   
+   private int newConfirmed;
+   
+   private int newDeaths;
+   
+   private int newRecovered;
+   
+   private int totalConfirmed;
+   
+   private int totalDeaths;
+   
+   private int totalRecovered;
+
+    public Country 
+    
+    (String name, String countryCode, int newConfirmed, int newDeaths, int newRecovered, 
+    
+    int totalConfirmed, int totalDeaths, int totalRecovered)
+    
+    {
+    
+    this.name = name;
+    
+    this.countryCode = countryCode;
+    
+    this.newConfirmed = newConfirmed;
+    
+    this.newDeaths = newDeaths;
+    
+    this.newRecovered = newRecovered;
+    
+    this.totalConfirmed = totalConfirmed;
+    
+    this.totalDeaths = totalDeaths;
+    
+    this.totalRecovered = totalRecovered;
+    
     }
     
-    public int getNewConfirmed() {
-        return newConfirmed;
+    public int getNewConfirmed() 
+    
+    {
+    
+    return newConfirmed;
+    
     }    
     
     public int getNewDeaths() {
