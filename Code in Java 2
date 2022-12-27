@@ -59,22 +59,6 @@ top10Cases.setModel(new javax.swing.table.DefaultTableModel(new Object [][] {
 new String [] {"", "Country", "Cases"}) 
 {Class[] types = new Class [] {java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class};
 
-public Class getColumnClass(int columnIndex) {
-return types [columnIndex];
-}});
-
-top10Cases.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
-top10Cases.setAutoscrolls(false);
-top10Cases.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-top10Cases.setRowHeight(30);
-top10CasesGroup.setViewportView(top10Cases);
-if (top10Cases.getColumnModel().getColumnCount() > 0) {
-top10Cases.getColumnModel().getColumn(0).setMinWidth(30);
-top10Cases.getColumnModel().getColumn(0).setPreferredWidth(30);
-top10Cases.getColumnModel().getColumn(0).setMaxWidth(30);
-}
-
-
 public static void main(String args[]) {
 private javax.swing.JTextField countryRecentCases;
 private javax.swing.JLabel countryRecentCasesLabel;
