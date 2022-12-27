@@ -1,5 +1,7 @@
 MainPage.java:
 
+public class MainPage extends javax.swing.JFrame {
+
 public MainPage() 
   
 {
@@ -26,4 +28,48 @@ Country argen = new Country("Argentina", "AR", 9215, 270, 8256, 488007, 10129, 3
   
 initComponents();
   
+}
+)
+
+
+Country usa = new Country("United States of America", "USA", 24257,267,17556,6300622,189208,2333551);
+Country india = new Country("India", "IN", 75809, 1133, 73521, 4280422, 72775, 3323950);
+Country brazil = new Country("Brazil", "BR", 10273, 310, 27046, 4147794, 126960, 3549201);
+Country russia = new Country("Russian Federation", "RF", 5106, 50, 2317, 1027334, 17818, 840997);
+Country peru = new Country("Peru", "PE", 6275, 151, 15829, 689977, 29838, 522251);
+Country colombia = new Country("Colombia", "CO", 5327, 203, 11050, 671848, 21615, 529279);
+Country safrica = new Country("South Africa", "ZA", 845, 115, 2664, 639362, 15004, 566555);
+Country mexico = new Country("Mexico", "MX", 3486, 223, 6665, 637509, 67781, 531334);
+Country spain = new Country("Spain", "ES", 26560, 98, 0, 525549, 29516, 150376);
+Country argen = new Country("Argentina", "AR", 9215, 270, 8256, 488007, 10129, 357388);
+
+top10Cases.setModel(new javax.swing.table.DefaultTableModel(new Object [][] {
+{ new Integer(1), "United States of America",  usa.getTotalConfirmed()},
+{ new Integer(2), "India",  india.getTotalConfirmed()},
+{ new Integer(3), "Brazil",  brazil.getTotalConfirmed()},
+{ new Integer(4), "Russian Federation",  russia.getTotalConfirmed()},
+{ new Integer(5), "Peru",  peru.getTotalConfirmed()},
+{ new Integer(6), "Columbia",  colombia.getTotalConfirmed()},
+{ new Integer(7), "South Africa", safrica.getTotalConfirmed()},
+{ new Integer(8), "Mexico", mexico.getTotalConfirmed()},
+{ new Integer(9), "Spain",  spain.getTotalConfirmed()},
+{ new Integer(10), "Argentina",  argen.getTotalConfirmed()}
+},
+
+new String [] {"", "Country", "Cases"}) 
+{Class[] types = new Class [] {java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class};
+
+public Class getColumnClass(int columnIndex) {
+return types [columnIndex];
+}});
+
+top10Cases.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
+top10Cases.setAutoscrolls(false);
+top10Cases.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+top10Cases.setRowHeight(30);
+top10CasesGroup.setViewportView(top10Cases);
+if (top10Cases.getColumnModel().getColumnCount() > 0) {
+top10Cases.getColumnModel().getColumn(0).setMinWidth(30);
+top10Cases.getColumnModel().getColumn(0).setPreferredWidth(30);
+top10Cases.getColumnModel().getColumn(0).setMaxWidth(30);
 }
