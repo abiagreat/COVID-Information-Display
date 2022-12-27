@@ -56,6 +56,70 @@ top10Cases.setModel(new javax.swing.table.DefaultTableModel(new Object [][] {
 { new Integer(10), "Argentina",  argen.getTotalConfirmed()}
 },
 
+top3InfoPanel.setToolTipText("");
+
+n3RecentDeathsLabel.setText("Recent Deaths -");
+
+n3RecentCasesLabel.setText("Recent Cases -");
+
+number1InfoLabel.setFont(new java.awt.Font("Tahoma", 3, 13)); // NOI18N
+number1InfoLabel.setText("United States of America:");
+
+number2InfoLLabel.setFont(new java.awt.Font("Tahoma", 3, 13)); // NOI18N
+number2InfoLLabel.setText("India:");
+
+number3InfoLabel.setFont(new java.awt.Font("Tahoma", 3, 13)); // NOI18N
+number3InfoLabel.setText("Brazil:");
+
+n1RecentDeaths.setEditable(false);
+n1RecentDeaths.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+n1RecentDeaths.setText(Integer.toString(usa.getNewDeaths()));
+n1RecentDeaths.addActionListener(new java.awt.event.ActionListener() {
+
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+n1RecentDeathsActionPerformed(evt);
+
+n1RecentCases.setText(Integer.toString(usa.getNewConfirmed()));
+
+n2RecentDeaths.setEditable(false);
+n2RecentDeaths.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+n2RecentDeaths.setText(Integer.toString(india.getNewDeaths()));
+
+n1RecentDeathsLabel.setText("Recent Deaths -");
+
+n1RecentCasesLabel.setText("Recent Cases -");
+
+n2RecentDeathsLabel.setText("Recent Deaths -");
+
+n2RecentCasesLabel.setText("Recent Cases -");
+
+n2RecentCases.setEditable(false);
+n2RecentCases.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+n2RecentCases.setText(Integer.toString(india.getNewConfirmed()));
+
+n3RecentDeaths.setEditable(false);
+n3RecentDeaths.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+n3RecentDeaths.setText(Integer.toString(brazil.getNewDeaths()));
+
+n3RecentCases.setEditable(false);
+n3RecentCases.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+n3RecentCases.setText(Integer.toString(brazil.getNewConfirmed()));
+
+n1TotalDeathsLabel.setText("Total Deaths -");
+
+n2TotalDeathsLabel.setText("Total Deaths -");
+
+n3TotalDeathsLabel.setText("Total Deaths -");
+
+n1TotalDeaths.setEditable(false);
+n1TotalDeaths.setText(Integer.toString(usa.getTotalDeaths()));
+
+n2TotalDeaths.setEditable(false);
+n2TotalDeaths.setText(Integer.toString(india.getTotalDeaths()));
+
+n3TotalDeaths.setEditable(false);
+n3TotalDeaths.setText(Integer.toString(brazil.getTotalDeaths()));
+
 new String [] {"", "Country", "Cases"}) 
 {Class[] types = new Class [] {java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class};
 
