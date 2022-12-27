@@ -73,3 +73,4 @@ top10Cases.getColumnModel().getColumn(0).setMinWidth(30);
 top10Cases.getColumnModel().getColumn(0).setPreferredWidth(30);
 top10Cases.getColumnModel().getColumn(0).setMaxWidth(30);
 }
+
