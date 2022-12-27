@@ -74,3 +74,21 @@ top10Cases.getColumnModel().getColumn(0).setPreferredWidth(30);
 top10Cases.getColumnModel().getColumn(0).setMaxWidth(30);
 }
 
+
+public static void main(String args[]) {
+private javax.swing.JTextField countryRecentCases;
+private javax.swing.JLabel countryRecentCasesLabel;
+private javax.swing.JTextField countryRecentDeaths;
+private javax.swing.JLabel countryRecentDeathsLabel;
+private javax.swing.JLabel countryRecentRecoverLabel;
+private javax.swing.JTextField countryRecentRecovered;
+private javax.swing.JLabel countrySelectedLabel;
+private javax.swing.JTextField countryTotalCases;
+private javax.swing.JLabel countryTotalCasesLabel;
+private javax.swing.JTextField countryTotalDeaths;
+private javax.swing.JLabel countryTotalDeathsLabel;
+private javax.swing.JTextField countryTotalRecovered;
+private javax.swing.JLabel countryTotalRecoveredLabel;
+private javax.swing.JButton jButton1;
+private javax.swing.JPanel jPanel1;                
+}
