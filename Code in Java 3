@@ -1,0 +1,278 @@
+CountryInfo.java
+
+public class CountryInfo extends javax.swing.JFrame {
+    public CountryInfo() {
+        initComponents();
+    }
+
+  @SuppressWarnings("unchecked")
+
+ private void initComponents() {
+
+        countrySelectedLabel = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        countryRecentCasesLabel = new javax.swing.JLabel();
+        countryRecentRecovered = new javax.swing.JTextField();
+        countryRecentDeathsLabel = new javax.swing.JLabel();
+        countryRecentRecoverLabel = new javax.swing.JLabel();
+        countryTotalCasesLabel = new javax.swing.JLabel();
+        countryTotalDeathsLabel = new javax.swing.JLabel();
+        countryTotalRecoveredLabel = new javax.swing.JLabel();
+        countryRecentCases = new javax.swing.JTextField();
+        countryTotalCases = new javax.swing.JTextField();
+        countryTotalDeaths = new javax.swing.JTextField();
+        countryRecentDeaths = new javax.swing.JTextField();
+        countryTotalRecovered = new javax.swing.JTextField();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Country Information");
+
+        countrySelectedLabel.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        countrySelectedLabel.setText("Country: China");
+
+        jButton1.setText("Back");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        countryRecentCasesLabel.setText("Recent Cases:");
+
+        countryRecentRecovered.setEditable(false);
+        countryRecentRecovered.setFont(new java.awt.Font("Corbel Light", 1, 24)); // NOI18N
+        countryRecentRecovered.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        countryRecentRecovered.setText("27");
+        countryRecentRecovered.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                countryRecentRecoveredActionPerformed(evt);
+            }
+        });
+
+        countryRecentDeathsLabel.setText("Recent Deaths:");
+
+        countryRecentRecoverLabel.setText("Recent Recovered:");
+
+        countryTotalCasesLabel.setText("Total Cases:");
+
+        countryTotalDeathsLabel.setText("Total Deaths:");
+
+        countryTotalRecoveredLabel.setText("Total Recovered:");
+
+        countryRecentCases.setEditable(false);
+        countryRecentCases.setFont(new java.awt.Font("Corbel Light", 1, 24)); // NOI18N
+        countryRecentCases.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        countryRecentCases.setText("20");
+        countryRecentCases.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                countryRecentCasesActionPerformed(evt);
+            }
+        });
+
+        countryTotalCases.setEditable(false);
+        countryTotalCases.setFont(new java.awt.Font("Corbel Light", 1, 24)); // NOI18N
+        countryTotalCases.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        countryTotalCases.setText("90078");
+        countryTotalCases.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                countryTotalCasesActionPerformed(evt);
+            }
+        });
+
+        countryTotalDeaths.setEditable(false);
+        countryTotalDeaths.setFont(new java.awt.Font("Corbel Light", 1, 24)); // NOI18N
+        countryTotalDeaths.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        countryTotalDeaths.setText("4732");
+        countryTotalDeaths.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                countryTotalDeathsActionPerformed(evt);
+            }
+        });
+
+        countryRecentDeaths.setEditable(false);
+        countryRecentDeaths.setFont(new java.awt.Font("Corbel Light", 1, 24)); // NOI18N
+        countryRecentDeaths.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        countryRecentDeaths.setText("2");
+        countryRecentDeaths.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                countryRecentDeathsActionPerformed(evt);
+            }
+        });
+
+        countryTotalRecovered.setEditable(false);
+        countryTotalRecovered.setFont(new java.awt.Font("Corbel Light", 1, 24)); // NOI18N
+        countryTotalRecovered.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        countryTotalRecovered.setText("84900");
+        countryTotalRecovered.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                countryTotalRecoveredActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(countryRecentDeathsLabel, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(countryRecentCasesLabel, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(countryRecentRecoverLabel, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(countryRecentDeaths, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(countryTotalDeathsLabel))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                            .addComponent(countryRecentCases, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(55, 55, 55)
+                            .addComponent(countryTotalCasesLabel))
+                        .addComponent(countryRecentRecovered, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(224, 224, 224)
+                        .addComponent(countryTotalRecoveredLabel)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(countryTotalDeaths, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(countryTotalCases, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(countryTotalRecovered, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(countryRecentCases, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(countryRecentCasesLabel)
+                        .addComponent(countryTotalCasesLabel)
+                        .addComponent(countryTotalCases, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(countryTotalDeathsLabel)
+                            .addComponent(countryTotalDeaths, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(countryTotalRecoveredLabel)
+                            .addComponent(countryTotalRecovered, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(countryRecentDeaths, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(countryRecentDeathsLabel))
+                        .addGap(21, 21, 21)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(countryRecentRecovered, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(countryRecentRecoverLabel))))
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(countrySelectedLabel)))
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(countrySelectedLabel)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addContainerGap(31, Short.MAX_VALUE))
+        );
+
+        pack();
+    }                       
+
+    private void countryRecentCasesActionPerformed(java.awt.event.ActionEvent evt) {                                                   
+        // TODO add your handling code here:
+    }                                                  
+
+    private void countryTotalCasesActionPerformed(java.awt.event.ActionEvent evt) {                                                  
+        // TODO add your handling code here:
+    }                                                 
+
+    private void countryTotalDeathsActionPerformed(java.awt.event.ActionEvent evt) {                                                   
+        // TODO add your handling code here:
+    }                                                  
+
+    private void countryRecentDeathsActionPerformed(java.awt.event.ActionEvent evt) {                                                    
+        // TODO add your handling code here:
+    }                                                   
+
+    private void countryTotalRecoveredActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+        // TODO add your handling code here:
+    }                                                     
+
+    private void countryRecentRecoveredActionPerformed(java.awt.event.ActionEvent evt) {                                                       
+        // TODO add your handling code here:
+    }                                                      
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        this.dispose();
+    }                                        
+
+
+    public static void main(String args[]) {
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(CountryInfo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(CountryInfo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(CountryInfo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(CountryInfo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new CountryInfo().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JTextField countryRecentCases;
+    private javax.swing.JLabel countryRecentCasesLabel;
+    private javax.swing.JTextField countryRecentDeaths;
+    private javax.swing.JLabel countryRecentDeathsLabel;
+    private javax.swing.JLabel countryRecentRecoverLabel;
+    private javax.swing.JTextField countryRecentRecovered;
+    private javax.swing.JLabel countrySelectedLabel;
+    private javax.swing.JTextField countryTotalCases;
+    private javax.swing.JLabel countryTotalCasesLabel;
+    private javax.swing.JTextField countryTotalDeaths;
+    private javax.swing.JLabel countryTotalDeathsLabel;
+    private javax.swing.JTextField countryTotalRecovered;
+    private javax.swing.JLabel countryTotalRecoveredLabel;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JPanel jPanel1;
+    // End of variables declaration                   
+}
