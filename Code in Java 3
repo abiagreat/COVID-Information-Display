@@ -1,4 +1,4 @@
-CountryInfo.java
+CountryInfo.java:
 
 public class CountryInfo extends javax.swing.JFrame {
     public CountryInfo() {
